@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Default" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Guid>d6e04f73-4855-4f28-b8cd-13e4de328750</Guid>
+    <Name>Smelling Salts</Name>
+    <Description>Description of My XCOM 2 Mod.</Description>
+    <SteamPublishID>0</SteamPublishID>
+    <AssemblyName>SmellingSalts</AssemblyName>
+    <RootNamespace>SmellingSalts</RootNamespace>
+    <ProjectGuid>{68309fb5-2466-42a5-a48d-5e6ee252bc0e}</ProjectGuid>
+  </PropertyGroup>
+  <ItemGroup>
+    <Folder Include="Config\" />
+    <Folder Include="Content\" />
+    <Folder Include="Localization\" />
+    <Folder Include="Src\" />
+    <Folder Include="Src\SmellingSalts\" />
+    <Folder Include="Src\SmellingSalts\Classes\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Config\XComSmellingSalts.ini">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Content\Smelling_Salts.upk">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ReadMe.txt" />
+    <Content Include="ModPreview.jpg" />
+    <Content Include="Config\XComEditor.ini" />
+    <Content Include="Config\XComEngine.ini" />
+    <Content Include="Config\XComGame.ini" />
+    <Content Include="Localization\XComGame.int" />
+    <Content Include="SmellingSalts.XComMod">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Src\SmellingSalts\Classes\X2Ability_SmellingSaltsRevive.uc">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Src\SmellingSalts\Classes\X2Condition_SmellingSaltsRevive.uc">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Src\SmellingSalts\Classes\X2Item_SmellingSalts.uc">
+      <SubType>Content</SubType>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildLocalExtensionPath)\XCOM2.targets" />
+</Project>
